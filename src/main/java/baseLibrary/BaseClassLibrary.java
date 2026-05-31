@@ -1,5 +1,10 @@
 package baseLibrary;
 
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.ArrayList;
@@ -31,7 +36,7 @@ public class BaseClassLibrary implements ExcelUtility ,ApplicationUtility
     @AfterTest
      public void closedBrowser()
      {
-    	 driver.quit();
+    	 //driver.quit();
      }
 
 	 @Override
@@ -75,6 +80,34 @@ public class BaseClassLibrary implements ExcelUtility ,ApplicationUtility
 		Set<String>tabs= driver.getWindowHandles();
 		ArrayList<String>tabno = new ArrayList(tabs);
 		driver.switchTo().window(tabno.get(indexno));
+		
+	 }
+
+	 @Override
+	 public void fileUploading(String path) 
+	 {
+		try 
+		{
+			StringSelection sel= new StringSelection(path);
+			Clipboard clip=Toolkit.getDefaultToolkit().getSystemClipboard();
+			clip.setContents(sel, null);
+			
+			Robot robot= new Robot();
+			robot.delay(1000);
+			//robot.keyPress(KeyEvent.VK_ENTER);
+			//robot.keyRelease(KeyEvent.VK_ENTER);
+			robot.keyPress(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_V);
+			robot.keyRelease(KeyEvent.VK_V);
+			robot.keyRelease(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.delay(1000);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+		} 
+		catch (Exception e)
+		{
+			System.out.println("Issue to getUpload File :" +e);
+		}
 		
 	 }
 

@@ -8,5 +8,7 @@ public interface ApplicationUtility
     public void RightClick(WebElement ele);
     
      public void ChangeWindow(int indexno);
+     
+     public void fileUploading(String path);
     
 }

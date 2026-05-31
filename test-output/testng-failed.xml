@@ -3,18 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testPackage.TC07_LinkTest">
+      <class name="testPackage.TC08_UploadAndDownloadTest">
         <methods>
-          <include name="getLaunchUrl"/>
-          <include name="ClickOnAllLinks"/>
-          <include name="ClickOnPracticebtn"/>
-          <include name="ClickOnBrowserbtn"/>
-          <include name="ClickOnElement"/>
+          <include name="uploadingfile"/>
           <include name="closedBrowser"/>
-          <include name="ClickOnClosed"/>
-          <include name="ClickOnLinks"/>
+          <include name="getLaunchUrl"/>
         </methods>
-      </class> <!-- testPackage.TC07_LinkTest -->
+      </class> <!-- testPackage.TC08_UploadAndDownloadTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
