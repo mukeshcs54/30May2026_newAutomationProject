@@ -46,7 +46,7 @@
    
    <test name="UploadAndDownload" enabled="true">
     <classes>
-      <class name="testPackage.TC08_UploadAndDownlaodTest"></class>
+      <class name="testPackage.TC08_UploadAndDownloadTest"></class>
    </classes>
    </test>
   
