@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="36" passed="36" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-25T23:06:15 IST" name="Suite" finished-at="2026-05-25T23:08:53 IST" duration-ms="157555">
+    <groups>
+    </groups>
+    <test started-at="2026-05-25T23:06:15 IST" name="LoginTest" finished-at="2026-05-25T23:06:27 IST" duration-ms="12069">
+      <class name="testPackage.TC01_LoginTest">
+        <test-method is-config="true" signature="getLaunchUrl()[pri:0, instance:testPackage.TC01_LoginTest@5ffead27]" started-at="2026-05-25T23:06:15 IST" name="getLaunchUrl" finished-at="2026-05-25T23:06:26 IST" duration-ms="10542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLaunchUrl -->
+        <test-method signature="getTitle()[pri:0, instance:testPackage.TC01_LoginTest@5ffead27]" started-at="2026-05-25T23:06:26 IST" name="getTitle" finished-at="2026-05-25T23:06:26 IST" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTitle -->
+        <test-method signature="getVerifyTitle()[pri:1, instance:testPackage.TC01_LoginTest@5ffead27]" started-at="2026-05-25T23:06:26 IST" name="getVerifyTitle" finished-at="2026-05-25T23:06:26 IST" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getVerifyTitle -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:testPackage.TC01_LoginTest@5ffead27]" started-at="2026-05-25T23:06:26 IST" name="closedBrowser" finished-at="2026-05-25T23:06:27 IST" duration-ms="1101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+      </class> <!-- testPackage.TC01_LoginTest -->
+    </test> <!-- LoginTest -->
+    <test started-at="2026-05-25T23:06:27 IST" name="TextBoxTest" finished-at="2026-05-25T23:06:46 IST" duration-ms="18740">
+      <class name="testPackage.TC02_TextBoxTest">
+        <test-method is-config="true" signature="getlaunchUrl()[pri:0, instance:testPackage.TC02_TextBoxTest@35e2d654]" started-at="2026-05-25T23:06:27 IST" name="getlaunchUrl" finished-at="2026-05-25T23:06:34 IST" duration-ms="6485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getlaunchUrl -->
+        <test-method signature="ClickOnClosed()[pri:0, instance:testPackage.TC02_TextBoxTest@35e2d654]" started-at="2026-05-25T23:06:34 IST" name="ClickOnClosed" finished-at="2026-05-25T23:06:34 IST" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnClosed -->
+        <test-method signature="ClickOnPracticebtn()[pri:1, instance:testPackage.TC02_TextBoxTest@35e2d654]" started-at="2026-05-25T23:06:34 IST" name="ClickOnPracticebtn" finished-at="2026-05-25T23:06:36 IST" duration-ms="2455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnPracticebtn -->
+        <test-method signature="ClickOnElement()[pri:2, instance:testPackage.TC02_TextBoxTest@35e2d654]" started-at="2026-05-25T23:06:36 IST" name="ClickOnElement" finished-at="2026-05-25T23:06:37 IST" duration-ms="350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnElement -->
+        <test-method signature="ClickOnTextBox()[pri:3, instance:testPackage.TC02_TextBoxTest@35e2d654]" started-at="2026-05-25T23:06:37 IST" name="ClickOnTextBox" finished-at="2026-05-25T23:06:37 IST" duration-ms="482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnTextBox -->
+        <test-method signature="getSendDetailTextbox()[pri:4, instance:testPackage.TC02_TextBoxTest@35e2d654]" started-at="2026-05-25T23:06:37 IST" name="getSendDetailTextbox" finished-at="2026-05-25T23:06:44 IST" duration-ms="6489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSendDetailTextbox -->
+        <test-method signature="getdetailOftextbox()[pri:5, instance:testPackage.TC02_TextBoxTest@35e2d654]" started-at="2026-05-25T23:06:44 IST" name="getdetailOftextbox" finished-at="2026-05-25T23:06:45 IST" duration-ms="993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getdetailOftextbox -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:testPackage.TC02_TextBoxTest@35e2d654]" started-at="2026-05-25T23:06:45 IST" name="closedBrowser" finished-at="2026-05-25T23:06:46 IST" duration-ms="1154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+      </class> <!-- testPackage.TC02_TextBoxTest -->
+    </test> <!-- TextBoxTest -->
+    <test started-at="2026-05-25T23:06:46 IST" name="CheckBoxTest" finished-at="2026-05-25T23:07:01 IST" duration-ms="14567">
+      <class name="testPackage.TC03_CheckBoxTest">
+        <test-method is-config="true" signature="getLaunchUrl()[pri:0, instance:testPackage.TC03_CheckBoxTest@7d8995e]" started-at="2026-05-25T23:06:46 IST" name="getLaunchUrl" finished-at="2026-05-25T23:06:53 IST" duration-ms="7226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLaunchUrl -->
+        <test-method signature="ClickOnClosed()[pri:0, instance:testPackage.TC03_CheckBoxTest@7d8995e]" started-at="2026-05-25T23:06:53 IST" name="ClickOnClosed" finished-at="2026-05-25T23:06:54 IST" duration-ms="442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnClosed -->
+        <test-method signature="ClickOnPracticebtn()[pri:1, instance:testPackage.TC03_CheckBoxTest@7d8995e]" started-at="2026-05-25T23:06:54 IST" name="ClickOnPracticebtn" finished-at="2026-05-25T23:06:56 IST" duration-ms="2573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnPracticebtn -->
+        <test-method signature="ClickOnElement()[pri:2, instance:testPackage.TC03_CheckBoxTest@7d8995e]" started-at="2026-05-25T23:06:56 IST" name="ClickOnElement" finished-at="2026-05-25T23:06:57 IST" duration-ms="299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnElement -->
+        <test-method signature="ClickOnCheckbox()[pri:3, instance:testPackage.TC03_CheckBoxTest@7d8995e]" started-at="2026-05-25T23:06:57 IST" name="ClickOnCheckbox" finished-at="2026-05-25T23:06:57 IST" duration-ms="580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnCheckbox -->
+        <test-method signature="ClickonAllCheckbox()[pri:4, instance:testPackage.TC03_CheckBoxTest@7d8995e]" started-at="2026-05-25T23:06:57 IST" name="ClickonAllCheckbox" finished-at="2026-05-25T23:06:59 IST" duration-ms="1424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickonAllCheckbox -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:testPackage.TC03_CheckBoxTest@7d8995e]" started-at="2026-05-25T23:06:59 IST" name="closedBrowser" finished-at="2026-05-25T23:07:01 IST" duration-ms="1989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+      </class> <!-- testPackage.TC03_CheckBoxTest -->
+    </test> <!-- CheckBoxTest -->
+    <test started-at="2026-05-25T23:07:01 IST" name="RadioButtonTest" finished-at="2026-05-25T23:07:13 IST" duration-ms="11947">
+      <class name="testPackage.TC04_RadioButtonTest">
+        <test-method is-config="true" signature="getLaunchUrl()[pri:0, instance:testPackage.TC04_RadioButtonTest@74f0ea28]" started-at="2026-05-25T23:07:01 IST" name="getLaunchUrl" finished-at="2026-05-25T23:07:07 IST" duration-ms="6747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLaunchUrl -->
+        <test-method signature="ClickOnClosed()[pri:0, instance:testPackage.TC04_RadioButtonTest@74f0ea28]" started-at="2026-05-25T23:07:07 IST" name="ClickOnClosed" finished-at="2026-05-25T23:07:08 IST" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnClosed -->
+        <test-method signature="ClickOnPracticebtn()[pri:1, instance:testPackage.TC04_RadioButtonTest@74f0ea28]" started-at="2026-05-25T23:07:08 IST" name="ClickOnPracticebtn" finished-at="2026-05-25T23:07:10 IST" duration-ms="2587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnPracticebtn -->
+        <test-method signature="ClickOnElement()[pri:2, instance:testPackage.TC04_RadioButtonTest@74f0ea28]" started-at="2026-05-25T23:07:10 IST" name="ClickOnElement" finished-at="2026-05-25T23:07:10 IST" duration-ms="313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnElement -->
+        <test-method signature="ClickOnRadioButtons()[pri:3, instance:testPackage.TC04_RadioButtonTest@74f0ea28]" started-at="2026-05-25T23:07:10 IST" name="ClickOnRadioButtons" finished-at="2026-05-25T23:07:11 IST" duration-ms="434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnRadioButtons -->
+        <test-method signature="ClickOnAllRadioButton()[pri:4, instance:testPackage.TC04_RadioButtonTest@74f0ea28]" started-at="2026-05-25T23:07:11 IST" name="ClickOnAllRadioButton" finished-at="2026-05-25T23:07:12 IST" duration-ms="833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnAllRadioButton -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:testPackage.TC04_RadioButtonTest@74f0ea28]" started-at="2026-05-25T23:07:12 IST" name="closedBrowser" finished-at="2026-05-25T23:07:13 IST" duration-ms="785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+      </class> <!-- testPackage.TC04_RadioButtonTest -->
+    </test> <!-- RadioButtonTest -->
+    <test started-at="2026-05-25T23:07:13 IST" name="WebTableTest" finished-at="2026-05-25T23:08:17 IST" duration-ms="64202">
+      <class name="testPackage.TC05_WebTableTest">
+        <test-method is-config="true" signature="getLaunchUrl()[pri:0, instance:testPackage.TC05_WebTableTest@2a3b5b47]" started-at="2026-05-25T23:07:13 IST" name="getLaunchUrl" finished-at="2026-05-25T23:07:20 IST" duration-ms="7824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLaunchUrl -->
+        <test-method signature="ClickOnClosed()[pri:0, instance:testPackage.TC05_WebTableTest@2a3b5b47]" started-at="2026-05-25T23:07:20 IST" name="ClickOnClosed" finished-at="2026-05-25T23:07:21 IST" duration-ms="997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnClosed -->
+        <test-method signature="ClickOnPracticebtn()[pri:1, instance:testPackage.TC05_WebTableTest@2a3b5b47]" started-at="2026-05-25T23:07:21 IST" name="ClickOnPracticebtn" finished-at="2026-05-25T23:07:25 IST" duration-ms="3459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnPracticebtn -->
+        <test-method signature="ClickOnElement()[pri:2, instance:testPackage.TC05_WebTableTest@2a3b5b47]" started-at="2026-05-25T23:07:25 IST" name="ClickOnElement" finished-at="2026-05-25T23:07:26 IST" duration-ms="1085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnElement -->
+        <test-method signature="ClickOnWebTable()[pri:3, instance:testPackage.TC05_WebTableTest@2a3b5b47]" started-at="2026-05-25T23:07:26 IST" name="ClickOnWebTable" finished-at="2026-05-25T23:07:27 IST" duration-ms="1367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnWebTable -->
+        <test-method signature="getfilldetail()[pri:4, instance:testPackage.TC05_WebTableTest@2a3b5b47]" started-at="2026-05-25T23:07:27 IST" name="getfilldetail" finished-at="2026-05-25T23:07:52 IST" duration-ms="24601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getfilldetail -->
+        <test-method signature="getUpdate()[pri:5, instance:testPackage.TC05_WebTableTest@2a3b5b47]" started-at="2026-05-25T23:07:52 IST" name="getUpdate" finished-at="2026-05-25T23:08:14 IST" duration-ms="21909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUpdate -->
+        <test-method signature="getUpdated_data()[pri:6, instance:testPackage.TC05_WebTableTest@2a3b5b47]" started-at="2026-05-25T23:08:14 IST" name="getUpdated_data" finished-at="2026-05-25T23:08:16 IST" duration-ms="1728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUpdated_data -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:testPackage.TC05_WebTableTest@2a3b5b47]" started-at="2026-05-25T23:08:16 IST" name="closedBrowser" finished-at="2026-05-25T23:08:17 IST" duration-ms="1094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+      </class> <!-- testPackage.TC05_WebTableTest -->
+    </test> <!-- WebTableTest -->
+    <test started-at="2026-05-25T23:08:17 IST" name="ButtonsTest" finished-at="2026-05-25T23:08:32 IST" duration-ms="15024">
+      <class name="testPackage.TC06_ButtonsTest">
+        <test-method is-config="true" signature="getLaunchUrl()[pri:0, instance:testPackage.TC06_ButtonsTest@4c371370]" started-at="2026-05-25T23:08:17 IST" name="getLaunchUrl" finished-at="2026-05-25T23:08:25 IST" duration-ms="8554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLaunchUrl -->
+        <test-method signature="ClickOnClosed()[pri:0, instance:testPackage.TC06_ButtonsTest@4c371370]" started-at="2026-05-25T23:08:25 IST" name="ClickOnClosed" finished-at="2026-05-25T23:08:26 IST" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnClosed -->
+        <test-method signature="ClickOnPracticebtn()[pri:1, instance:testPackage.TC06_ButtonsTest@4c371370]" started-at="2026-05-25T23:08:26 IST" name="ClickOnPracticebtn" finished-at="2026-05-25T23:08:29 IST" duration-ms="3073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnPracticebtn -->
+        <test-method signature="ClickOnElement()[pri:2, instance:testPackage.TC06_ButtonsTest@4c371370]" started-at="2026-05-25T23:08:29 IST" name="ClickOnElement" finished-at="2026-05-25T23:08:29 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnElement -->
+        <test-method signature="ClickOnButton()[pri:3, instance:testPackage.TC06_ButtonsTest@4c371370]" started-at="2026-05-25T23:08:29 IST" name="ClickOnButton" finished-at="2026-05-25T23:08:30 IST" duration-ms="694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnButton -->
+        <test-method signature="ClickOnAllbutton()[pri:4, instance:testPackage.TC06_ButtonsTest@4c371370]" started-at="2026-05-25T23:08:30 IST" name="ClickOnAllbutton" finished-at="2026-05-25T23:08:31 IST" duration-ms="1132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnAllbutton -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:testPackage.TC06_ButtonsTest@4c371370]" started-at="2026-05-25T23:08:31 IST" name="closedBrowser" finished-at="2026-05-25T23:08:32 IST" duration-ms="904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+      </class> <!-- testPackage.TC06_ButtonsTest -->
+    </test> <!-- ButtonsTest -->
+    <test started-at="2026-05-25T23:08:32 IST" name="LinkTest" finished-at="2026-05-25T23:08:53 IST" duration-ms="20868">
+      <class name="testPackage.TC07_LinkTest">
+        <test-method is-config="true" signature="getLaunchUrl()[pri:0, instance:testPackage.TC07_LinkTest@6302bbb1]" started-at="2026-05-25T23:08:32 IST" name="getLaunchUrl" finished-at="2026-05-25T23:08:40 IST" duration-ms="7988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLaunchUrl -->
+        <test-method signature="ClickOnClosed()[pri:0, instance:testPackage.TC07_LinkTest@6302bbb1]" started-at="2026-05-25T23:08:40 IST" name="ClickOnClosed" finished-at="2026-05-25T23:08:40 IST" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnClosed -->
+        <test-method signature="ClickOnPracticebtn()[pri:1, instance:testPackage.TC07_LinkTest@6302bbb1]" started-at="2026-05-25T23:08:40 IST" name="ClickOnPracticebtn" finished-at="2026-05-25T23:08:44 IST" duration-ms="3640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnPracticebtn -->
+        <test-method signature="ClickOnElement()[pri:2, instance:testPackage.TC07_LinkTest@6302bbb1]" started-at="2026-05-25T23:08:44 IST" name="ClickOnElement" finished-at="2026-05-25T23:08:44 IST" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnElement -->
+        <test-method signature="ClickOnLinks()[pri:3, instance:testPackage.TC07_LinkTest@6302bbb1]" started-at="2026-05-25T23:08:44 IST" name="ClickOnLinks" finished-at="2026-05-25T23:08:45 IST" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnLinks -->
+        <test-method signature="ClickOnBrowserbtn()[pri:4, instance:testPackage.TC07_LinkTest@6302bbb1]" started-at="2026-05-25T23:08:45 IST" name="ClickOnBrowserbtn" finished-at="2026-05-25T23:08:48 IST" duration-ms="3551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnBrowserbtn -->
+        <test-method signature="ClickOnAllLinks()[pri:5, instance:testPackage.TC07_LinkTest@6302bbb1]" started-at="2026-05-25T23:08:48 IST" name="ClickOnAllLinks" finished-at="2026-05-25T23:08:52 IST" duration-ms="3525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnAllLinks -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:testPackage.TC07_LinkTest@6302bbb1]" started-at="2026-05-25T23:08:52 IST" name="closedBrowser" finished-at="2026-05-25T23:08:53 IST" duration-ms="849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+      </class> <!-- testPackage.TC07_LinkTest -->
+    </test> <!-- LinkTest -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="LoginTest" enabled="true">
+    <classes>
+      <class name="testPackage.TC01_LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="TextBoxTest" enabled="true">
+  <classes>
+  <class name="testPackage.TC02_TextBoxTest"></class>
+  </classes>
+  </test>
+  
+  <test name="CheckBoxTest" enabled="true">
+    <classes>
+      <class name="testPackage.TC03_CheckBoxTest"></class>
+   </classes>
+  </test>
+  
+    <test name="RadioButtonTest" enabled="true">
+    <classes>
+      <class name="testPackage.TC04_RadioButtonTest"></class>
+   </classes>
+   </test>
+   
+   
+   <test name="WebTableTest" enabled="true">
+    <classes>
+      <class name="testPackage.TC05_WebTableTest"></class>
+   </classes>
+   </test>
+   
+   <test name="ButtonsTest" enabled="true">
+    <classes>
+      <class name="testPackage.TC06_ButtonsTest"></class>
+   </classes>
+   </test>
+   
+   <test name="LinkTest" enabled="true">
+    <classes>
+      <class name="testPackage.TC07_LinkTest"></class>
+   </classes>
+   </test>
+   
+   
+  
+</suite> <!-- Suite -->
