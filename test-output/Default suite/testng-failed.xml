@@ -6,7 +6,10 @@
       <class name="testPackage.TC08_UploadAndDownloadTest">
         <methods>
           <include name="uploadingfile"/>
+          <include name="ClickOnElement"/>
+          <include name="ClickOnSelectFile"/>
           <include name="closedBrowser"/>
+          <include name="ClickOnUploadAndDownlaod"/>
           <include name="getLaunchUrl"/>
         </methods>
       </class> <!-- testPackage.TC08_UploadAndDownloadTest -->

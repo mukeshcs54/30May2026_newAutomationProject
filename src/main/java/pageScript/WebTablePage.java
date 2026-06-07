@@ -1,15 +1,19 @@
 package pageScript;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import baseLibrary.BaseClassLibrary;
 
 public class WebTablePage extends BaseClassLibrary
 {  
+	WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(10));
 	String path="C:\\Users\\Av\\eclipse-workspaceApril_2026\\25May2026_MavenAutomationTestingBabaProject\\TestData_25May2026\\testdata.xlsx";
     public WebTablePage()
     {
@@ -50,18 +54,22 @@ public class WebTablePage extends BaseClassLibrary
     
     public void ClickOnClosedbtn()
     {
+    	 wait.until(ExpectedConditions.elementToBeClickable(closedbtn));
   	  closedbtn.click();
     }
     public void ClickOnPracticebtn()
     {
+    	 wait.until(ExpectedConditions.elementToBeClickable(practicebtn));
   	  practicebtn.click();
     }
     public void ClickOnElementbtn()
     {
+    	wait.until(ExpectedConditions.elementToBeClickable(elementbtn));
   	  elementbtn.click();
     }
     public void ClickOnWebTablebtn()
     {
+    	wait.until(ExpectedConditions.elementToBeClickable(webtablebtn));
   	  webtablebtn.click();
     }
     public void filldetailInWebtable()

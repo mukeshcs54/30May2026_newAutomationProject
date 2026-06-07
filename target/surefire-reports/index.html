@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">42 methods,   42 passed</span>
+                    <span class="method-stats">42 methods, 1 failed,   41 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testPackage.TC08_UploadAndDownloadTest" class="method navigator-link" hash-for-method="ClickOnClosed">ClickOnClosed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -159,11 +173,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testPackage.TC07_LinkTest" class="method navigator-link" hash-for-method="ClickOnClosed">ClickOnClosed</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testPackage.TC08_UploadAndDownloadTest" class="method navigator-link" hash-for-method="ClickOnClosed">ClickOnClosed</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -323,6 +332,35 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testPackage.TC08_UploadAndDownloadTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClickOnClosed">
+                  </a> <!-- ClickOnClosed -->
+                  <span class="method-name">ClickOnClosed</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable, but the element was not visible.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.54, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: C:\Users\Av\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53965}, goog:processID: 19944, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53965/devtoo..., se:cdpVersion: 149.0.7827.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c29a6dcef540c68759d140c0fcd5bae8
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pageScript.UploadAndDownloadPage.ClickOnClosedbtn(UploadAndDownloadPage.java:38)
+	at testPackage.TC08_UploadAndDownloadTest.ClickOnClosed(TC08_UploadAndDownloadTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -351,13 +389,6 @@
               <span class="class-name">testPackage.TC08_UploadAndDownloadTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="ClickOnClosed">
-                  </a> <!-- ClickOnClosed -->
-                  <span class="method-name">ClickOnClosed</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="ClickOnElement">
@@ -792,172 +823,172 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(42);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'ClickOnPracticebtn')
-data.setCell(0, 2, 'testPackage.TC06_ButtonsTest')
-data.setCell(0, 3, 31728);
+data.setCell(0, 2, 'testPackage.TC03_CheckBoxTest')
+data.setCell(0, 3, 44720);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'ClickOnPracticebtn')
-data.setCell(1, 2, 'testPackage.TC08_UploadAndDownloadTest')
-data.setCell(1, 3, 27413);
+data.setCell(1, 2, 'testPackage.TC06_ButtonsTest')
+data.setCell(1, 3, 19388);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'ClickOnPracticebtn')
-data.setCell(2, 2, 'testPackage.TC02_TextBoxTest')
-data.setCell(2, 3, 17315);
+data.setCell(2, 1, 'ClickOnClosed')
+data.setCell(2, 2, 'testPackage.TC08_UploadAndDownloadTest')
+data.setCell(2, 3, 10393);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'ClickOnPracticebtn')
+data.setCell(3, 1, 'getUpdate')
 data.setCell(3, 2, 'testPackage.TC05_WebTableTest')
-data.setCell(3, 3, 16158);
+data.setCell(3, 3, 9233);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'ClickOnPracticebtn')
-data.setCell(4, 2, 'testPackage.TC04_RadioButtonTest')
-data.setCell(4, 3, 13861);
+data.setCell(4, 2, 'testPackage.TC05_WebTableTest')
+data.setCell(4, 3, 9109);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'ClickOnPracticebtn')
-data.setCell(5, 2, 'testPackage.TC07_LinkTest')
-data.setCell(5, 3, 11847);
+data.setCell(5, 1, 'getfilldetail')
+data.setCell(5, 2, 'testPackage.TC05_WebTableTest')
+data.setCell(5, 3, 8043);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'ClickOnPracticebtn')
-data.setCell(6, 2, 'testPackage.TC03_CheckBoxTest')
-data.setCell(6, 3, 9662);
+data.setCell(6, 2, 'testPackage.TC08_UploadAndDownloadTest')
+data.setCell(6, 3, 7346);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'getUpdate')
-data.setCell(7, 2, 'testPackage.TC05_WebTableTest')
-data.setCell(7, 3, 8615);
+data.setCell(7, 1, 'ClickOnPracticebtn')
+data.setCell(7, 2, 'testPackage.TC07_LinkTest')
+data.setCell(7, 3, 7254);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'getfilldetail')
-data.setCell(8, 2, 'testPackage.TC05_WebTableTest')
-data.setCell(8, 3, 7204);
+data.setCell(8, 1, 'ClickOnPracticebtn')
+data.setCell(8, 2, 'testPackage.TC04_RadioButtonTest')
+data.setCell(8, 3, 6195);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'getSendDetailTextbox')
 data.setCell(9, 2, 'testPackage.TC02_TextBoxTest')
-data.setCell(9, 3, 6386);
+data.setCell(9, 3, 5566);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'uploadingfile')
-data.setCell(10, 2, 'testPackage.TC08_UploadAndDownloadTest')
-data.setCell(10, 3, 3325);
+data.setCell(10, 1, 'ClickOnPracticebtn')
+data.setCell(10, 2, 'testPackage.TC02_TextBoxTest')
+data.setCell(10, 3, 3548);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'ClickonAllCheckbox')
-data.setCell(11, 2, 'testPackage.TC03_CheckBoxTest')
-data.setCell(11, 3, 2853);
+data.setCell(11, 1, 'ClickOnAllLinks')
+data.setCell(11, 2, 'testPackage.TC07_LinkTest')
+data.setCell(11, 3, 2930);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'ClickOnAllLinks')
-data.setCell(12, 2, 'testPackage.TC07_LinkTest')
-data.setCell(12, 3, 2818);
+data.setCell(12, 1, 'uploadingfile')
+data.setCell(12, 2, 'testPackage.TC08_UploadAndDownloadTest')
+data.setCell(12, 3, 2693);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'ClickOnBrowserbtn')
 data.setCell(13, 2, 'testPackage.TC07_LinkTest')
-data.setCell(13, 3, 1904);
+data.setCell(13, 3, 2488);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'ClickOnAllbutton')
-data.setCell(14, 2, 'testPackage.TC06_ButtonsTest')
-data.setCell(14, 3, 769);
+data.setCell(14, 1, 'ClickonAllCheckbox')
+data.setCell(14, 2, 'testPackage.TC03_CheckBoxTest')
+data.setCell(14, 3, 2085);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'ClickOnAllRadioButton')
 data.setCell(15, 2, 'testPackage.TC04_RadioButtonTest')
-data.setCell(15, 3, 736);
+data.setCell(15, 3, 1268);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'getUpdated_data')
 data.setCell(16, 2, 'testPackage.TC05_WebTableTest')
-data.setCell(16, 3, 654);
+data.setCell(16, 3, 980);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'ClickOnWebTable')
-data.setCell(17, 2, 'testPackage.TC05_WebTableTest')
-data.setCell(17, 3, 619);
+data.setCell(17, 1, 'ClickOnAllbutton')
+data.setCell(17, 2, 'testPackage.TC06_ButtonsTest')
+data.setCell(17, 3, 825);
 data.setCell(18, 0, 18)
 data.setCell(18, 1, 'getdetailOftextbox')
 data.setCell(18, 2, 'testPackage.TC02_TextBoxTest')
-data.setCell(18, 3, 511);
+data.setCell(18, 3, 801);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'ClickOnRadioButtons')
-data.setCell(19, 2, 'testPackage.TC04_RadioButtonTest')
-data.setCell(19, 3, 492);
+data.setCell(19, 1, 'ClickOnWebTable')
+data.setCell(19, 2, 'testPackage.TC05_WebTableTest')
+data.setCell(19, 3, 573);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'ClickOnButton')
-data.setCell(20, 2, 'testPackage.TC06_ButtonsTest')
-data.setCell(20, 3, 449);
+data.setCell(20, 1, 'ClickOnUploadAndDownlaod')
+data.setCell(20, 2, 'testPackage.TC08_UploadAndDownloadTest')
+data.setCell(20, 3, 515);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'ClickOnUploadAndDownlaod')
-data.setCell(21, 2, 'testPackage.TC08_UploadAndDownloadTest')
-data.setCell(21, 3, 413);
+data.setCell(21, 1, 'ClickOnButton')
+data.setCell(21, 2, 'testPackage.TC06_ButtonsTest')
+data.setCell(21, 3, 465);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'ClickOnLinks')
-data.setCell(22, 2, 'testPackage.TC07_LinkTest')
-data.setCell(22, 3, 409);
+data.setCell(22, 1, 'ClickOnSelectFile')
+data.setCell(22, 2, 'testPackage.TC08_UploadAndDownloadTest')
+data.setCell(22, 3, 447);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'ClickOnTextBox')
-data.setCell(23, 2, 'testPackage.TC02_TextBoxTest')
-data.setCell(23, 3, 404);
+data.setCell(23, 1, 'ClickOnRadioButtons')
+data.setCell(23, 2, 'testPackage.TC04_RadioButtonTest')
+data.setCell(23, 3, 437);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'ClickOnCheckbox')
-data.setCell(24, 2, 'testPackage.TC03_CheckBoxTest')
-data.setCell(24, 3, 385);
+data.setCell(24, 1, 'ClickOnElement')
+data.setCell(24, 2, 'testPackage.TC04_RadioButtonTest')
+data.setCell(24, 3, 433);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'ClickOnElement')
-data.setCell(25, 2, 'testPackage.TC02_TextBoxTest')
-data.setCell(25, 3, 344);
+data.setCell(25, 1, 'ClickOnCheckbox')
+data.setCell(25, 2, 'testPackage.TC03_CheckBoxTest')
+data.setCell(25, 3, 428);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'ClickOnSelectFile')
-data.setCell(26, 2, 'testPackage.TC08_UploadAndDownloadTest')
-data.setCell(26, 3, 337);
+data.setCell(26, 1, 'ClickOnLinks')
+data.setCell(26, 2, 'testPackage.TC07_LinkTest')
+data.setCell(26, 3, 417);
 data.setCell(27, 0, 27)
 data.setCell(27, 1, 'ClickOnElement')
-data.setCell(27, 2, 'testPackage.TC04_RadioButtonTest')
-data.setCell(27, 3, 329);
+data.setCell(27, 2, 'testPackage.TC02_TextBoxTest')
+data.setCell(27, 3, 414);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'ClickOnElement')
-data.setCell(28, 2, 'testPackage.TC06_ButtonsTest')
-data.setCell(28, 3, 303);
+data.setCell(28, 1, 'ClickOnClosed')
+data.setCell(28, 2, 'testPackage.TC05_WebTableTest')
+data.setCell(28, 3, 412);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'ClickOnElement')
-data.setCell(29, 2, 'testPackage.TC07_LinkTest')
-data.setCell(29, 3, 289);
+data.setCell(29, 1, 'ClickOnTextBox')
+data.setCell(29, 2, 'testPackage.TC02_TextBoxTest')
+data.setCell(29, 3, 379);
 data.setCell(30, 0, 30)
 data.setCell(30, 1, 'ClickOnElement')
-data.setCell(30, 2, 'testPackage.TC03_CheckBoxTest')
-data.setCell(30, 3, 269);
+data.setCell(30, 2, 'testPackage.TC05_WebTableTest')
+data.setCell(30, 3, 346);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'ClickOnElement')
-data.setCell(31, 2, 'testPackage.TC05_WebTableTest')
-data.setCell(31, 3, 265);
+data.setCell(31, 1, 'ClickOnClosed')
+data.setCell(31, 2, 'testPackage.TC02_TextBoxTest')
+data.setCell(31, 3, 339);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'ClickOnClosed')
-data.setCell(32, 2, 'testPackage.TC04_RadioButtonTest')
-data.setCell(32, 3, 248);
+data.setCell(32, 1, 'ClickOnElement')
+data.setCell(32, 2, 'testPackage.TC03_CheckBoxTest')
+data.setCell(32, 3, 339);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'ClickOnClosed')
+data.setCell(33, 1, 'ClickOnElement')
 data.setCell(33, 2, 'testPackage.TC08_UploadAndDownloadTest')
-data.setCell(33, 3, 232);
+data.setCell(33, 3, 319);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'ClickOnElement')
-data.setCell(34, 2, 'testPackage.TC08_UploadAndDownloadTest')
-data.setCell(34, 3, 232);
+data.setCell(34, 1, 'ClickOnClosed')
+data.setCell(34, 2, 'testPackage.TC03_CheckBoxTest')
+data.setCell(34, 3, 258);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'ClickOnClosed')
+data.setCell(35, 1, 'ClickOnElement')
 data.setCell(35, 2, 'testPackage.TC07_LinkTest')
-data.setCell(35, 3, 222);
+data.setCell(35, 3, 240);
 data.setCell(36, 0, 36)
-data.setCell(36, 1, 'ClickOnClosed')
-data.setCell(36, 2, 'testPackage.TC02_TextBoxTest')
-data.setCell(36, 3, 220);
+data.setCell(36, 1, 'ClickOnElement')
+data.setCell(36, 2, 'testPackage.TC06_ButtonsTest')
+data.setCell(36, 3, 223);
 data.setCell(37, 0, 37)
 data.setCell(37, 1, 'ClickOnClosed')
-data.setCell(37, 2, 'testPackage.TC06_ButtonsTest')
-data.setCell(37, 3, 197);
+data.setCell(37, 2, 'testPackage.TC07_LinkTest')
+data.setCell(37, 3, 193);
 data.setCell(38, 0, 38)
 data.setCell(38, 1, 'ClickOnClosed')
-data.setCell(38, 2, 'testPackage.TC03_CheckBoxTest')
-data.setCell(38, 3, 190);
+data.setCell(38, 2, 'testPackage.TC06_ButtonsTest')
+data.setCell(38, 3, 180);
 data.setCell(39, 0, 39)
 data.setCell(39, 1, 'ClickOnClosed')
-data.setCell(39, 2, 'testPackage.TC05_WebTableTest')
-data.setCell(39, 3, 168);
+data.setCell(39, 2, 'testPackage.TC04_RadioButtonTest')
+data.setCell(39, 3, 169);
 data.setCell(40, 0, 40)
 data.setCell(40, 1, 'getVerifyTitle')
 data.setCell(40, 2, 'testPackage.TC01_LoginTest')
-data.setCell(40, 3, 49);
+data.setCell(40, 3, 53);
 data.setCell(41, 0, 41)
 data.setCell(41, 1, 'getTitle')
 data.setCell(41, 2, 'testPackage.TC01_LoginTest')
-data.setCell(41, 3, 44);
+data.setCell(41, 3, 46);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -995,252 +1026,254 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">getTitle</span>
-                <span class="method-start">8311 ms</span>
+                <span class="method-start">30310 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getVerifyTitle</span>
-                <span class="method-start">8403 ms</span>
+                <span class="method-start">30403 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closedBrowser</span>
-                <span class="method-start">8463 ms</span>
+                <span class="method-start">30460 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testPackage.TC02_TextBoxTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">getlaunchUrl</span>
-                <span class="method-start">9658 ms</span>
+                <span class="method-start">31651 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">ClickOnClosed</span>
-                <span class="method-start">17804 ms</span>
+                <span class="method-start">42892 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnPracticebtn</span>
-                <span class="method-start">18034 ms</span>
+                <span class="method-start">43237 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnElement</span>
-                <span class="method-start">35355 ms</span>
+                <span class="method-start">46791 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnTextBox</span>
-                <span class="method-start">35727 ms</span>
+                <span class="method-start">47257 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getSendDetailTextbox</span>
-                <span class="method-start">36137 ms</span>
+                <span class="method-start">47639 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getdetailOftextbox</span>
-                <span class="method-start">42531 ms</span>
+                <span class="method-start">53220 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closedBrowser</span>
-                <span class="method-start">43044 ms</span>
+                <span class="method-start">54021 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testPackage.TC03_CheckBoxTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">getLaunchUrl</span>
-                <span class="method-start">43802 ms</span>
+                <span class="method-start">60247 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">ClickOnClosed</span>
-                <span class="method-start">58117 ms</span>
+                <span class="method-start">79035 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnPracticebtn</span>
-                <span class="method-start">58325 ms</span>
+                <span class="method-start">79316 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnElement</span>
-                <span class="method-start">67989 ms</span>
+                <span class="method-start">124038 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnCheckbox</span>
-                <span class="method-start">68290 ms</span>
+                <span class="method-start">124408 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickonAllCheckbox</span>
-                <span class="method-start">68681 ms</span>
+                <span class="method-start">124836 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closedBrowser</span>
-                <span class="method-start">71539 ms</span>
+                <span class="method-start">126923 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testPackage.TC04_RadioButtonTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">getLaunchUrl</span>
-                <span class="method-start">72372 ms</span>
+                <span class="method-start">128084 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">ClickOnClosed</span>
-                <span class="method-start">79661 ms</span>
+                <span class="method-start">152345 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnPracticebtn</span>
-                <span class="method-start">79912 ms</span>
+                <span class="method-start">152516 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnElement</span>
-                <span class="method-start">93776 ms</span>
+                <span class="method-start">158713 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnRadioButtons</span>
-                <span class="method-start">94107 ms</span>
+                <span class="method-start">159148 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnAllRadioButton</span>
-                <span class="method-start">94602 ms</span>
+                <span class="method-start">159592 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closedBrowser</span>
-                <span class="method-start">95339 ms</span>
+                <span class="method-start">160864 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testPackage.TC05_WebTableTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">getLaunchUrl</span>
-                <span class="method-start">96256 ms</span>
+                <span class="method-start">161607 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">ClickOnClosed</span>
-                <span class="method-start">106302 ms</span>
+                <span class="method-start">175766 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnPracticebtn</span>
-                <span class="method-start">106472 ms</span>
+                <span class="method-start">176182 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnElement</span>
-                <span class="method-start">122633 ms</span>
+                <span class="method-start">185297 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnWebTable</span>
-                <span class="method-start">122902 ms</span>
+                <span class="method-start">185661 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getfilldetail</span>
-                <span class="method-start">123524 ms</span>
+                <span class="method-start">186236 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getUpdate</span>
-                <span class="method-start">130733 ms</span>
+                <span class="method-start">194285 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getUpdated_data</span>
-                <span class="method-start">139349 ms</span>
+                <span class="method-start">203518 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closedBrowser</span>
-                <span class="method-start">140004 ms</span>
+                <span class="method-start">204500 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testPackage.TC06_ButtonsTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">getLaunchUrl</span>
-                <span class="method-start">140679 ms</span>
+                <span class="method-start">205250 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">ClickOnClosed</span>
-                <span class="method-start">150087 ms</span>
+                <span class="method-start">225488 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnPracticebtn</span>
-                <span class="method-start">150291 ms</span>
+                <span class="method-start">225672 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnElement</span>
-                <span class="method-start">182020 ms</span>
+                <span class="method-start">245060 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnButton</span>
-                <span class="method-start">182333 ms</span>
+                <span class="method-start">245285 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnAllbutton</span>
-                <span class="method-start">182783 ms</span>
+                <span class="method-start">245752 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closedBrowser</span>
-                <span class="method-start">183553 ms</span>
+                <span class="method-start">246577 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testPackage.TC07_LinkTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">getLaunchUrl</span>
-                <span class="method-start">184254 ms</span>
+                <span class="method-start">247452 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">ClickOnClosed</span>
-                <span class="method-start">193566 ms</span>
+                <span class="method-start">268896 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnPracticebtn</span>
-                <span class="method-start">193798 ms</span>
+                <span class="method-start">269092 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnElement</span>
-                <span class="method-start">205646 ms</span>
+                <span class="method-start">276356 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnLinks</span>
-                <span class="method-start">205937 ms</span>
+                <span class="method-start">276603 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnBrowserbtn</span>
-                <span class="method-start">206349 ms</span>
+                <span class="method-start">277020 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnAllLinks</span>
-                <span class="method-start">208267 ms</span>
+                <span class="method-start">279523 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closedBrowser</span>
-                <span class="method-start">211086 ms</span>
+                <span class="method-start">282453 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testPackage.TC08_UploadAndDownloadTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">getLaunchUrl</span>
-                <span class="method-start">211840 ms</span>
+                <span class="method-start">283601 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">ClickOnClosed</span>
-                <span class="method-start">218150 ms</span>
+                <span class="method-start">297671 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnPracticebtn</span>
-                <span class="method-start">218393 ms</span>
+                <span class="method-start">308085 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnElement</span>
-                <span class="method-start">245808 ms</span>
+                <span class="method-start">315431 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnUploadAndDownlaod</span>
-                <span class="method-start">246063 ms</span>
+                <span class="method-start">315780 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickOnSelectFile</span>
-                <span class="method-start">246478 ms</span>
+                <span class="method-start">316295 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">uploadingfile</span>
-                <span class="method-start">246817 ms</span>
+                <span class="method-start">316744 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closedBrowser</span>
-                <span class="method-start">250143 ms</span>
+                <span class="method-start">319437 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

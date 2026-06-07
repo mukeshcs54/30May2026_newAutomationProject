@@ -6,6 +6,7 @@ import baseLibrary.BaseClassLibrary;
 
 public class LoginPage extends BaseClassLibrary
 {
+	
     public void getTitle()
     {
     	String title=driver.getTitle();

@@ -33,25 +33,33 @@ public class UploadAndDownloadPage extends BaseClassLibrary
 	@FindBy(xpath = "//label[@for=\"File1\"]")
 	private WebElement selectfilebtn;
 
-	public void ClickOnClosedbtn() {
+	public void ClickOnClosedbtn()
+	{
+		wait.until(ExpectedConditions.elementToBeClickable(closedbtn));
 		closedbtn.click();
 	}
 
-	public void ClickOnPracticebtn() {
+	public void ClickOnPracticebtn()
+	{
+		wait.until(ExpectedConditions.elementToBeClickable(practicebtn));
 		practicebtn.click();
 	}
 
-	public void ClickOnElementbtn() {
+	public void ClickOnElementbtn() 
+	{
+		wait.until(ExpectedConditions.elementToBeClickable(elementbtn));
 		elementbtn.click();
 	}
 
-	public void ClickOnUploadAndDownlaodbtn() {
+	public void ClickOnUploadAndDownlaodbtn() 
+	{
+		wait.until(ExpectedConditions.elementToBeClickable(UploadAndDownlaodbtn));
 		UploadAndDownlaodbtn.click();
 	}
 
 	public void ClickOnSelectFilebtn() {
 		
-		wait.until(ExpectedConditions.elementToBeClickable(selectfilebtn));
+		//wait.until(ExpectedConditions.elementToBeClickable(selectfilebtn));
 		selectfilebtn.click();
 
 	}

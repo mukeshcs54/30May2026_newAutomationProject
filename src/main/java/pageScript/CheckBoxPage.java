@@ -1,13 +1,18 @@
 package pageScript;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import baseLibrary.BaseClassLibrary;
 
 public class CheckBoxPage extends BaseClassLibrary
 {
+	WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(10));
 	public CheckBoxPage()
     {
     	PageFactory.initElements(driver, this);
@@ -35,22 +40,27 @@ public class CheckBoxPage extends BaseClassLibrary
 	  
 	  public void ClickOnClosedbtn()
 	  {
+		  wait.until(ExpectedConditions.elementToBeClickable(closedbtn));
 		  closedbtn.click();
 	  }
 	  public void ClickOnPracticebtn()
 	  {
+		  wait.until(ExpectedConditions.elementToBeClickable(practicebtn));
 		  practicebtn.click();
 	  }
 	  public void ClickOnElementbtn()
 	  {
+		  wait.until(ExpectedConditions.elementToBeClickable(elementbtn));
 		  elementbtn.click();
 	  }
 	  public void ClickOnCheckboxbtn()
 	  {
+		  wait.until(ExpectedConditions.elementToBeClickable(checkboxbtn));
 		  checkboxbtn.click();
 	  }
 	  public void ClickOnAllCheckboxbtn()
 	  {
+		  wait.until(ExpectedConditions.visibilityOf(frameloc));
 		  driver.switchTo().frame(frameloc);
 		 
 		  mobilebtn.click();

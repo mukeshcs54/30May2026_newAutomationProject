@@ -36,7 +36,11 @@ public class BaseClassLibrary implements ExcelUtility ,ApplicationUtility
     @AfterTest
      public void closedBrowser()
      {
-    	 driver.close();
+    	// driver.close();
+    	if(driver != null)
+        {
+            driver.quit();
+        }
      }
 
 	 @Override

@@ -12,7 +12,7 @@ import baseLibrary.BaseClassLibrary;
 
 public class LinkPage extends BaseClassLibrary
 {
-	WebDriverWait wait;
+	   WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(10));
 	   public LinkPage()
 	   {
 		   PageFactory.initElements(driver, this);
@@ -47,18 +47,22 @@ public class LinkPage extends BaseClassLibrary
 	     
 		  public void ClickOnClosedbtn()
 		  {
+			  wait.until(ExpectedConditions.elementToBeClickable(closedbtn));
 			  closedbtn.click();
 		  }
 		  public void ClickOnPracticebtn()
 		  {
+			  wait.until(ExpectedConditions.elementToBeClickable(practicebtn));
 			  practicebtn.click();
 		  }
 		  public void ClickOnElementbtn()
 		  {
+			  wait.until(ExpectedConditions.elementToBeClickable(elementbtn));
 			  elementbtn.click();
 		  }
 		  public void ClickOnLinkbtn()
 		  {
+			  wait.until(ExpectedConditions.elementToBeClickable(linkbtn));
 			  linkbtn.click();
 		  }
 		  public void ClickOnDempPagebtn()
@@ -76,6 +80,7 @@ public class LinkPage extends BaseClassLibrary
 		  }
 		  public void ClickOnAllLinkbtn()
 		  {
+			  wait.until(ExpectedConditions.elementToBeClickable(Createdbtn));
 			  Createdbtn.click();
 			  NoContentbtn.click();
 			  Movedbtn.click();
